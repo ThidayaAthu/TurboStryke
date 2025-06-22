@@ -1,0 +1,169 @@
+body {
+    font-family: 'Kanit', Arial, sans-serif;
+    margin: 0;
+    background: #181a1b;
+}
+
+header h1 {
+    font-family: 'Gemunu Libre', Arial, sans-serif;
+    color: #fff;
+    margin-bottom: 13rem;
+    font-weight: 700;
+    font-size: 5.5rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    background: #23272a;
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Faculty Glyphic', Arial, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #ffffff;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #b80000;
+}
+
+header {
+    background-image: url('https://thumbs.dreamstime.com/b/stylish-anime-character-posing-sports-car-urban-nightscape-artwork-featuring-young-standing-confidently-vibrant-red-376492859.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 500px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #23272a;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #b80000;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.tune-options {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tune-card-ecu {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemAAmVdY8jCiXYRjluOUVLYC-Hx8ssl0ewg&s');
+    background-position: center;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-left: 6px solid #b80000;
+    margin-bottom: 1.5rem;
+}
+.tune-card-turbo {
+    background: #2c2f33;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-left: 6px solid #b80000;
+    margin-bottom: 1.5rem;
+}
+.tune-card-exhaust {
+    background: #2c2f33;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-left: 6px solid #b80000;
+    margin-bottom: 1.5rem;
+}
+.tune-card-ecu h3,
+.tune-card-turbo h3,
+.tune-card-exhaust h3 {
+    color: #ff0000;
+    font-family: 'Gemunu Libre', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.tune-card-ecu p,
+.tune-card-turbo p,
+.tune-card-exhaust p {
+    color: #fffafa;
+    font-family: 'Kanit', Arial, sans-serif;
+    font-size: 1rem;
+}
+form {
+    margin-top: 2rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #b80000;
+    background: #181a1b;
+    color: #fff;
+    font-family: 'Kanit', Arial, sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #b80000;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background: #b80000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+    font-family: 'Kanit', Arial, sans-serif;
+}
+
+button:hover {
+    background: #8c0000;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #23272a;
+    color: #fff;
+    margin-top: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Kanit', Arial, sans-serif;
+}
