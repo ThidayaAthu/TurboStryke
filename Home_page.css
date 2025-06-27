@@ -36,11 +36,11 @@ nav a:hover {
 }
 
 header {
-    background-image: url('https://thumbs.dreamstime.com/b/stylish-anime-character-posing-sports-car-urban-nightscape-artwork-featuring-young-standing-confidently-vibrant-red-376492859.jpg');
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240727/pngtree-a-mechanic-holding-new-tire-in-car-workshop-image_15931849.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: bottom center;
     height: 500px;
     display: flex;
     align-items: flex-end;
@@ -66,49 +66,79 @@ p {
 
 .tune-options {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .tune-card-ecu {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemAAmVdY8jCiXYRjluOUVLYC-Hx8ssl0ewg&s');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 8px;
     padding: 1.5rem;
     flex: 1;
-    min-width: 250px;
+    max-width: calc(50% - 0.5rem);
+    height: 250px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     border-left: 6px solid #b80000;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .tune-card-turbo {
-    background: #2c2f33;
+    background-image: url('https://www.shutterstock.com/image-photo/big-turbo-on-racing-car-260nw-1711039912.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 8px;
     padding: 1.5rem;
     flex: 1;
-    min-width: 250px;
+    max-width: calc(50% - 0.5rem);
+    height: 250px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     border-left: 6px solid #b80000;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .tune-card-exhaust {
-    background: #2c2f33;
+    background-image: url('https://a-static.besthdwallpaper.com/ferrari-f40-a-testament-to-italian-engineering-wallpaper-3440x1440-124636_15.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 8px;
-    padding: 1.5rem;
-    flex: 1;
-    min-width: 250px;
+    padding: 5rem;
+    flex: 1 1 100%;
+    width: 100%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     border-left: 6px solid #b80000;
     margin-bottom: 1.5rem;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.tune-card-ecu h3,
-.tune-card-turbo h3,
-.tune-card-exhaust h3 {
-    color: #ff0000;
+.tune-card-ecu h3 {
+    color: #ffc800;
     font-family: 'Gemunu Libre', Arial, sans-serif;
     font-size: 1.5rem;
 }
-
+.tune-card-exhaust h3 {
+    color: #ffc800;
+    font-family: 'Gemunu Libre', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+.tune-card-turbo h3 {
+    color: #ffc800;
+    font-family: 'Gemunu Libre', Arial, sans-serif;
+    font-size: 1.5rem;
+}
 .tune-card-ecu p,
 .tune-card-turbo p,
 .tune-card-exhaust p {
@@ -150,7 +180,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.2s;
+    transition: 0.2s;
     font-family: 'Kanit', Arial, sans-serif;
 }
 
@@ -166,4 +196,25 @@ footer {
     margin-top: 2rem;
     letter-spacing: 1px;
     font-family: 'Kanit', Arial, sans-serif;
+}
+/* Responsive design */
+@media (max-width: 768px) {
+    .tune-options {
+        flex-direction: column;
+    }
+    
+    .tune-card-ecu,
+    .tune-card-turbo,
+    .tune-card-exhaust {
+        flex: 0 0 100%;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+.tune-card-ecu:hover,
+.tune-card-turbo:hover,
+.tune-card-exhaust:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(184, 0, 0, 0.4);
 }
